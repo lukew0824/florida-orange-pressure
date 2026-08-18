@@ -438,7 +438,7 @@ img { display: block; }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-areas: "header" "para1" "photo" "para2" "media";
   gap: 18px;
   max-width: 760px;
@@ -458,7 +458,7 @@ img { display: block; }
 
 @media (min-width: 901px) {
   .about-grid {
-    grid-template-columns: 520px 1fr;
+    grid-template-columns: 520px minmax(0, 1fr);
     grid-template-areas:
       "photo header"
       "photo para1"
@@ -485,17 +485,17 @@ img { display: block; }
     gap: 56px;
   }
 
-  .services-copy-column { order: 2; max-width: 460px; }
+  .services-copy-column { order: 2; max-width: none; text-align: center; }
   .service-grid { order: 1; }
-  .services-intro { margin: 0 0 32px; max-width: none; }
+  .services-intro { margin: 0 auto 32px; max-width: 560px; }
 
-  .services-list { display: flex; flex-direction: column; gap: 22px; margin: 0 0 32px; padding: 28px 0 0; border-top: 1px solid var(--border); }
-  .services-list li { display: flex; align-items: baseline; gap: 14px; }
+  .services-list { display: flex; flex-direction: column; align-items: center; gap: 22px; margin: 0 auto 32px; max-width: 480px; padding: 28px 0 0; border-top: 1px solid var(--border); }
+  .services-list li { display: flex; align-items: baseline; gap: 14px; text-align: left; }
   .services-list-number { flex: 0 0 auto; color: var(--orange); font-family: "Archivo", sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0.1em; }
   .services-list li strong { display: block; color: var(--navy); font-family: "Archivo", sans-serif; font-size: 16px; font-weight: 700; }
   .services-list-tags { display: block; margin-top: 4px; color: var(--dark-orange); font-size: 13.5px; }
 
-  .services-note { display: block; margin: 0; padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14.5px; line-height: 1.6; }
+  .services-note { display: block; margin: 0 auto; max-width: 480px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14.5px; line-height: 1.6; }
 
   .service-grid { grid-template-columns: repeat(2, 1fr); gap: 36px 28px; }
 
