@@ -277,7 +277,6 @@ img { display: block; }
 }
 
 .services-intro {
-  display: none;
   margin: 14px 0 0;
   max-width: 460px;
   color: #4a4038;
@@ -468,6 +467,8 @@ img { display: block; }
   .about-heading,
   .about-media { max-width: 560px; }
   .about-media { align-items: flex-start; margin-top: 14px; }
+
+  .service-tags { margin-top: 14px; padding-top: 14px; border-top: 1px dashed var(--dark-orange); }
 }
 
 .about-rating {
@@ -618,7 +619,6 @@ img { display: block; }
 }
 
 @media (max-width: 900px) {
-  .services-intro { display: block; }
   .site-header { padding: 12px 22px; }
   .desktop-nav { display: none; }
   .brand { min-width: 0; }
