@@ -186,9 +186,14 @@ export default function Home() {
             </div>
             <div className="recent-work-link">
               <span>See more real Florida Orange work</span>
-              <a href="https://www.instagram.com/florida_orange_pressurewashing/" target="_blank" rel="noreferrer">
-                View recent projects on Instagram ↗
-              </a>
+              <div className="recent-work-social">
+                <a href="https://www.instagram.com/florida_orange_pressurewashing/" target="_blank" rel="noreferrer">
+                  <InstagramIcon /><span>Instagram</span>
+                </a>
+                <a href="https://www.facebook.com/share/182dqsFzk2/" target="_blank" rel="noreferrer">
+                  <FacebookIcon /><span>Facebook</span>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -264,7 +269,7 @@ export default function Home() {
             <div className="contact-details">
               <div className="map-frame">
                 <iframe
-                  src="https://www.google.com/maps?q=Florida%20Orange%20Pressure%20Washing%20LLC%2C%20Nocatee%2C%20FL&output=embed"
+                  src="https://www.google.com/maps?q=Nocatee%2C+FL&z=12&output=embed"
                   title="Google Map for Florida Orange Pressure Washing in Nocatee, Florida"
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"

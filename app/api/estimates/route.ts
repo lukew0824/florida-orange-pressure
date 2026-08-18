@@ -1,5 +1,3 @@
-const ALLOWED_SERVICES = new Set(["Pressure washing", "Paver sealing", "Both"]);
-
 const recentRequests = new Map<string, number[]>();
 
 function clean(value: FormDataEntryValue | null, maxLength: number) {
@@ -45,10 +43,10 @@ export async function POST(request: Request) {
 
     const name = clean(formData.get("name"), 100);
     const phone = clean(formData.get("phone"), 30);
-    const service = clean(formData.get("service"), 40);
-    const propertyDetails = clean(formData.get("propertyDetails"), 2000);
+    const service = clean(formData.get("service"), 500);
+    const address = clean(formData.get("address"), 200);
 
-    if (!name || !phone || !propertyDetails || !ALLOWED_SERVICES.has(service)) {
+    if (!name || !phone || !service || !address) {
       return Response.json({ error: "Please complete every required field." }, { status: 400 });
     }
 
@@ -72,13 +70,13 @@ export async function POST(request: Request) {
       body: JSON.stringify({
         from,
         to: [recipient],
-        subject: `New ${service} estimate request from ${name}`,
+        subject: `New estimate request from ${name}`,
         html: `
           <h1>New Florida Orange estimate request</h1>
           <p><strong>Name:</strong> ${escapeHtml(name)}</p>
           <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
-          <p><strong>Service:</strong> ${escapeHtml(service)}</p>
-          <p><strong>Property address &amp; details:</strong><br>${escapeHtml(propertyDetails).replaceAll("\n", "<br>")}</p>
+          <p><strong>Service:</strong><br>${escapeHtml(service).replaceAll("\n", "<br>")}</p>
+          <p><strong>Address:</strong> ${escapeHtml(address)}</p>
         `,
       }),
     });

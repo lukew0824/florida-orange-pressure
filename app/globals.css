@@ -373,14 +373,28 @@ img { display: block; }
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 6px;
+  gap: 10px;
   max-width: 440px;
   color: #5e5349;
   font-size: 14px;
 }
 
-.recent-work-link a { color: var(--dark-orange); font-weight: 700; }
-.recent-work-link a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.recent-work-social { display: flex; gap: 10px; }
+
+.recent-work-social a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  color: var(--navy);
+  padding: 9px 14px;
+  font-family: "Archivo", sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+}
+
+.recent-work-social a:hover { border-color: var(--dark-orange); color: var(--dark-orange); }
+.recent-work-social .footer-social-icon { width: 18px; height: 18px; flex: 0 0 18px; }
 
 .sealing-section { background: var(--cream); }
 
@@ -453,8 +467,7 @@ img { display: block; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 .field { display: block; margin-bottom: 18px; }
 
-.field label,
-.service-choice legend {
+.field label {
   display: block;
   margin-bottom: 8px;
   color: #5e5349;
@@ -465,7 +478,8 @@ img { display: block; }
   text-transform: uppercase;
 }
 
-.field input {
+.field input,
+.field textarea {
   width: 100%;
   border: 1px solid #e0c9b2;
   border-radius: 0;
@@ -476,30 +490,9 @@ img { display: block; }
 }
 
 .field input { min-height: 50px; }
-.field input:focus { border-color: var(--orange); outline: 2px solid rgba(247, 128, 26, 0.18); }
-
-.service-choice { margin: 0 0 18px; padding: 0; border: 0; }
-.service-choice > div { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
-.service-choice label { position: relative; cursor: pointer; }
-.service-choice input { position: absolute; opacity: 0; }
-
-.service-choice label span {
-  min-height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #e0c9b2;
-  background: var(--white);
-  color: #4a4038;
-  padding: 14px 10px;
-  text-align: center;
-  font-family: "Archivo", sans-serif;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.service-choice input:checked + span { border-color: var(--orange); background: var(--orange); color: var(--navy); }
-.service-choice input:focus-visible + span { outline: 3px solid var(--navy); outline-offset: 3px; }
+.field textarea { resize: vertical; }
+.field input:focus,
+.field textarea:focus { border-color: var(--orange); outline: 2px solid rgba(247, 128, 26, 0.18); }
 
 .form-error { margin: 0 0 14px; padding: 11px 13px; border-left: 4px solid #b42318; background: #fff1f0; color: #7a1c14; }
 
@@ -664,13 +657,13 @@ img { display: block; }
   .service-item { grid-template-columns: 1fr; gap: 18px; }
   .service-copy { order: 2; }
   .service-item .photo-slot { order: 1; min-height: 240px; }
-  .sealing-photos { height: auto; }
-  .sealing-photos .photo-slot { min-height: 260px; }
+  .sealing-photos { height: auto; display: block; }
+  .sealing-photos .photo-slot { min-height: 320px; }
+  .sealing-photo:last-child { display: none; }
   .benefit-grid, .fact-grid, .form-row { grid-template-columns: 1fr; }
   .area-list { display: none; }
   .about-grid { grid-template-columns: 1fr; }
   .about-photo { height: 460px; }
-  .service-choice > div { grid-template-columns: 1fr; }
   .contact-facts { grid-template-columns: 1fr; }
   .county-map-frame iframe { height: 420px; }
   .map-legend { align-items: flex-start; flex-direction: column; gap: 8px; }

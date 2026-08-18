@@ -97,33 +97,27 @@ export function EstimateForm() {
         </div>
       </div>
 
-      <fieldset className="service-choice">
-        <legend>Service</legend>
-        <div>
-          <label>
-            <input name="service" type="radio" value="Pressure washing" required />
-            <span>Pressure washing</span>
-          </label>
-          <label>
-            <input name="service" type="radio" value="Paver sealing" />
-            <span>Paver sealing</span>
-          </label>
-          <label>
-            <input name="service" type="radio" value="Both" />
-            <span>Both</span>
-          </label>
-        </div>
-      </fieldset>
+      <div className="field">
+        <label htmlFor="service">Service</label>
+        <textarea
+          id="service"
+          name="service"
+          rows={3}
+          maxLength={500}
+          placeholder="e.g. driveway pressure wash, pool deck washed and sealed"
+          required
+        />
+      </div>
 
       <div className="field">
-        <label htmlFor="propertyDetails">Property address &amp; details</label>
+        <label htmlFor="address">Address</label>
         <input
-          id="propertyDetails"
-          name="propertyDetails"
+          id="address"
+          name="address"
           type="text"
           autoComplete="street-address"
-          maxLength={2000}
-          placeholder="000 Palm Valley Rd, Ponte Vedra — driveway and pool deck"
+          maxLength={200}
+          placeholder="000 Palm Valley Rd, Ponte Vedra"
           required
         />
       </div>
