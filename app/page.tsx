@@ -84,6 +84,17 @@ const sealingBenefits = [
   "Extends the life of your hardscape",
 ];
 
+const areas = [
+  "Ponte Vedra",
+  "Ponte Vedra Beach",
+  "Nocatee",
+  "St. Augustine",
+  "Jacksonville",
+  "Jacksonville Beach",
+  "Neptune & Atlantic Beach",
+  "Fruit Cove & Julington Creek",
+];
+
 export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",
@@ -174,15 +185,13 @@ export default function Home() {
               <h2 id="services-title">What we do</h2>
             </div>
             <div className="recent-work-link">
-              <span>See more real Florida Orange work</span>
-              <div className="recent-work-social">
-                <a href="https://www.instagram.com/florida_orange_pressurewashing/" target="_blank" rel="noreferrer">
-                  <InstagramIcon /><span>Instagram</span>
-                </a>
-                <a href="https://www.facebook.com/share/182dqsFzk2/" target="_blank" rel="noreferrer">
-                  <FacebookIcon /><span>Facebook</span>
-                </a>
-              </div>
+              <span>See more work</span>
+              <a href="https://www.instagram.com/florida_orange_pressurewashing/" target="_blank" rel="noreferrer" aria-label="Instagram">
+                <InstagramIcon />
+              </a>
+              <a href="https://www.facebook.com/share/182dqsFzk2/" target="_blank" rel="noreferrer" aria-label="Facebook">
+                <FacebookIcon />
+              </a>
             </div>
           </div>
 
@@ -256,6 +265,13 @@ export default function Home() {
               <EstimateForm />
             </div>
             <div className="contact-details" id="area">
+              <div className="area-tags">
+                {areas.map((area) => (
+                  <span key={area} className={area === "Nocatee" ? "area-tag area-tag--home" : "area-tag"}>
+                    {area}
+                  </span>
+                ))}
+              </div>
               <div className="county-map-frame">
                 <iframe src="/assets/service-area-map.html" title="Map of Florida with St. Johns and Duval counties highlighted" loading="lazy" />
                 <div className="map-legend">

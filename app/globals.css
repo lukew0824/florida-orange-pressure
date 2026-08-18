@@ -371,30 +371,15 @@ img { display: block; }
 
 .recent-work-link {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  max-width: 440px;
+  align-items: center;
+  gap: 12px;
   color: #5e5349;
   font-size: 14px;
 }
 
-.recent-work-social { display: flex; gap: 10px; }
-
-.recent-work-social a {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid var(--border);
-  color: var(--navy);
-  padding: 9px 14px;
-  font-family: "Archivo", sans-serif;
-  font-size: 13.5px;
-  font-weight: 700;
-}
-
-.recent-work-social a:hover { border-color: var(--dark-orange); color: var(--dark-orange); }
-.recent-work-social .footer-social-icon { width: 18px; height: 18px; flex: 0 0 18px; }
+.recent-work-link a { display: flex; align-items: center; color: var(--navy); }
+.recent-work-link a:hover { color: var(--dark-orange); }
+.recent-work-link .footer-social-icon { width: 20px; height: 20px; flex: 0 0 20px; }
 
 .sealing-section { background: var(--cream); }
 
@@ -523,6 +508,8 @@ img { display: block; }
 .text-button { align-self: flex-start; margin-top: 20px; border: 0; border-bottom: 1px solid currentColor; background: transparent; color: var(--navy); padding: 0 0 2px; font-weight: 700; cursor: pointer; }
 
 .contact-details { display: flex; flex-direction: column; }
+
+.area-tags { display: none; }
 
 .county-map-frame { padding: 14px; border: 1px solid #efd5bc; background: #fae3ce; }
 .county-map-frame iframe { display: block; width: 100%; height: 400px; border: 0; background: #fae3ce; }
@@ -664,6 +651,9 @@ img { display: block; }
   .about-copy { order: 1; }
   .about-media { order: 2; }
   .about-photo { height: 460px; }
+  .area-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 14px; }
+  .area-tag { border: 1px solid var(--border); background: var(--warm-cream); color: var(--navy); padding: 6px 12px; font-family: "Archivo", sans-serif; font-size: 12.5px; font-weight: 600; }
+  .area-tag--home { border-color: var(--orange); color: var(--dark-orange); }
   .county-map-frame iframe { height: 300px; }
   .map-legend { align-items: flex-start; flex-direction: column; gap: 8px; }
 
