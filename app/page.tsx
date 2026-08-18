@@ -332,12 +332,10 @@ export default function Home() {
                 Austin checks the work with you before pulling out of the driveway.
                 If something is not right, he will make it right.
               </p>
-              <dl className="fact-grid">
-                <div><dt>Business</dt><dd>Florida Orange Pressure Washing LLC</dd></div>
-                <div><dt>Rating</dt><dd>5.0 on Google</dd></div>
-                <div><dt>Services</dt><dd>Pressure washing & paver sealing</dd></div>
-                <div><dt>Based in</dt><dd>Nocatee, Florida</dd></div>
-              </dl>
+              <div className="about-rating">
+                <span className="about-rating-stars" aria-hidden="true">★★★★★</span>
+                <strong>5.0 on Google</strong>
+              </div>
             </div>
           </div>
         </section>

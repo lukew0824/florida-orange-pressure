@@ -444,18 +444,18 @@ img { display: block; }
 
 .about-copy > p:not(.eyebrow) { margin: 18px 0 0; color: var(--text); font-size: 17.5px; line-height: 1.7; }
 
-.fact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1px;
-  margin: 30px 0 0;
+.about-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 30px;
+  padding: 16px 22px;
   border: 1px solid var(--border);
-  background: var(--border);
+  background: var(--warm-cream);
 }
 
-.fact-grid > div { background: var(--warm-cream); padding: 20px 22px; }
-.fact-grid dt { color: var(--dark-orange); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; }
-.fact-grid dd { margin: 5px 0 0; color: var(--navy); font-family: "Archivo", sans-serif; font-size: 17px; font-weight: 600; }
+.about-rating-stars { color: var(--orange); font-size: 20px; letter-spacing: 2px; }
+.about-rating strong { color: var(--navy); font-family: "Archivo", sans-serif; font-size: 17px; font-weight: 700; }
 
 .contact-section { padding-top: 88px; padding-bottom: 88px; background: var(--cream); }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; }
@@ -613,9 +613,23 @@ img { display: block; }
   .brand small { font-size: 10px; }
 
   .mobile-menu { position: relative; display: block; }
-  .mobile-menu summary { width: 48px; height: 48px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; border: 1px solid var(--border); list-style: none; cursor: pointer; }
+  .mobile-menu summary { position: relative; width: 48px; height: 48px; border: 1px solid var(--border); list-style: none; cursor: pointer; }
   .mobile-menu summary::-webkit-details-marker { display: none; }
-  .mobile-menu summary span { width: 20px; height: 2px; background: var(--navy); }
+  .mobile-menu summary span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background: var(--navy);
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .mobile-menu summary span:nth-child(1) { transform: translate(-50%, -7px); }
+  .mobile-menu summary span:nth-child(2) { transform: translate(-50%, -50%); }
+  .mobile-menu summary span:nth-child(3) { transform: translate(-50%, 5px); }
+  .mobile-menu[open] summary span:nth-child(1) { transform: translate(-50%, -50%) rotate(45deg); }
+  .mobile-menu[open] summary span:nth-child(2) { opacity: 0; }
+  .mobile-menu[open] summary span:nth-child(3) { transform: translate(-50%, -50%) rotate(-45deg); }
   .mobile-menu nav { position: absolute; z-index: 100; top: 57px; right: -22px; width: min(360px, 100vw); display: flex; flex-direction: column; padding: 18px 22px; border-top: 1px solid var(--border); background: var(--cream); box-shadow: 0 16px 30px rgba(10, 24, 38, 0.14); }
   .mobile-menu nav > a:not(.orange-button) { padding: 12px 0; border-bottom: 1px solid var(--border); color: var(--navy); font-weight: 600; }
   .mobile-menu .orange-button { margin-top: 14px; padding: 14px; }
@@ -660,10 +674,11 @@ img { display: block; }
   .sealing-photos { height: auto; display: block; }
   .sealing-photos .photo-slot { min-height: 320px; }
   .sealing-photo:last-child { display: none; }
-  .benefit-grid, .fact-grid, .form-row { grid-template-columns: 1fr; }
+  .benefit-grid, .form-row { grid-template-columns: 1fr; }
   .area-list { display: none; }
   .about-grid { grid-template-columns: 1fr; }
-  .about-photo { height: 460px; }
+  .about-copy { order: 1; }
+  .about-photo { order: 2; height: 460px; }
   .contact-facts { grid-template-columns: 1fr; }
   .county-map-frame iframe { height: 420px; }
   .map-legend { align-items: flex-start; flex-direction: column; gap: 8px; }
