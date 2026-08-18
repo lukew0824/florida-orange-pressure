@@ -192,14 +192,34 @@ export default function Home() {
           </div>
 
           <div className="services-layout">
-            <p className="services-intro">
-              Driveways, siding, fences, and pool decks: professional-grade
-              pressure washing and soft washing for every exterior
-              surface, done right the first time. We match the pressure,
-              cleaner, and technique to each material, so concrete gets
-              blasted clean while siding and pavers get the gentler touch
-              they need to stay in good shape for years to come.
-            </p>
+            <div className="services-copy-column">
+              <p className="services-intro">
+                Driveways, siding, fences, and pool decks: professional-grade
+                pressure washing and soft washing for every exterior
+                surface, done right the first time. We match the pressure,
+                cleaner, and technique to each material, so concrete gets
+                blasted clean while siding and pavers get the gentler touch
+                they need to stay in good shape for years to come.
+              </p>
+
+              <ul className="services-list">
+                {services.map((service) => (
+                  <li key={service.number}>
+                    <span className="services-list-number">{service.number}</span>
+                    <div>
+                      <strong>{service.title}</strong>
+                      <span className="services-list-tags">{service.items}</span>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+
+              <p className="services-note">
+                Not sure which service fits your project? Send a note through
+                the estimate form below and Austin will point you the right
+                direction, no obligation.
+              </p>
+            </div>
 
             <div className="service-grid">
               {services.map((service) => (
