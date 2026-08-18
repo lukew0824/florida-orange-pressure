@@ -182,7 +182,10 @@ export default function Home() {
               <p className="services-intro">
                 Driveways, siding, fences, and pool decks: professional-grade
                 pressure washing and soft washing for every exterior
-                surface, done right the first time.
+                surface, done right the first time. We match the pressure,
+                cleaner, and technique to each material, so concrete gets
+                blasted clean while siding and pavers get the gentler touch
+                they need to stay in good shape for years to come.
               </p>
             </div>
             <div className="recent-work-link">
