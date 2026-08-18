@@ -283,29 +283,29 @@ export default function Home() {
 
         <section className="content-section about-section" id="about" aria-labelledby="about-title">
           <div className="about-grid">
-            <div className="about-copy">
+            <div className="about-heading">
               <p className="eyebrow">About</p>
               <h2 id="about-title">Meet Austin.</h2>
-              <p>
-                Florida Orange is owner-operated—the person who quotes your job is
-                the person who shows up and does it. On time, courteous, and priced
-                fairly, with no upselling and no surprises on the invoice.
-              </p>
-              <div className="photo-slot has-photo about-photo">
-                <img src="/assets/austin-sollenberger.webp" alt="Austin Sollenberger, owner of Florida Orange Pressure Washing" width="1050" height="1400" loading="lazy" decoding="async" />
-              </div>
-              <p>
-                Austin checks the work with you before pulling out of the driveway.
-                If something is not right, he will make it right.
-              </p>
-              <div className="about-media">
-                <p className="about-rating-label">Leave us a review</p>
-                <a className="about-rating" href="https://share.google/h75AAtK9pGtpQ15ew" target="_blank" rel="noreferrer">
-                  <GoogleIcon />
-                  <span className="about-rating-stars" aria-hidden="true">★★★★★</span>
-                  <strong>5.0 on Google</strong>
-                </a>
-              </div>
+            </div>
+            <p className="about-para about-para-1">
+              Florida Orange is owner-operated—the person who quotes your job is
+              the person who shows up and does it. On time, courteous, and priced
+              fairly, with no upselling and no surprises on the invoice.
+            </p>
+            <div className="photo-slot has-photo about-photo">
+              <img src="/assets/austin-sollenberger.webp" alt="Austin Sollenberger, owner of Florida Orange Pressure Washing" width="1050" height="1400" loading="lazy" decoding="async" />
+            </div>
+            <p className="about-para about-para-2">
+              Austin checks the work with you before pulling out of the driveway.
+              If something is not right, he will make it right.
+            </p>
+            <div className="about-media">
+              <p className="about-rating-label">Leave us a review</p>
+              <a className="about-rating" href="https://share.google/h75AAtK9pGtpQ15ew" target="_blank" rel="noreferrer">
+                <GoogleIcon />
+                <span className="about-rating-stars" aria-hidden="true">★★★★★</span>
+                <strong>5.0 on Google</strong>
+              </a>
             </div>
           </div>
         </section>
