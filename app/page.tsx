@@ -264,6 +264,7 @@ export default function Home() {
               </p>
               <EstimateForm />
             </div>
+            <div className="contact-divider" aria-hidden="true" />
             <div className="contact-details" id="area">
               <div className="area-tags">
                 {areas.map((area) => (
