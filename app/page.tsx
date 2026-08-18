@@ -36,7 +36,6 @@ const services = [
   {
     number: "01",
     title: "Driveways & hardscapes",
-    copy: "A thorough surface clean that lifts dirt, algae, and built-up grime from the hard surfaces around your property.",
     items: "Driveways · Walkways · Patios · Concrete",
     image: "/assets/driveway-clean.webp",
     imageAlt: "Clean interlocking paver driveway after pressure washing",
@@ -46,7 +45,6 @@ const services = [
   {
     number: "02",
     title: "House & soft washing",
-    copy: "A surface-appropriate low-pressure wash for siding, stucco, exterior walls, and trim where high pressure does not belong.",
     items: "Siding · Stucco · Exterior Walls · Trim",
     image: "/assets/soft-wash-house.webp",
     imageAlt: "Clean yellow house siding after a soft wash",
@@ -56,7 +54,6 @@ const services = [
   {
     number: "03",
     title: "Fences",
-    copy: "Clear away mold, mildew, dirt, and weathering so wood and vinyl fencing looks cared for again.",
     items: "Vinyl · Wood · Exterior Surfaces",
     image: "/assets/fence-clean.webp",
     imageAlt: "Bright white vinyl fence after cleaning",
@@ -66,7 +63,6 @@ const services = [
   {
     number: "04",
     title: "Pool decks & outdoor living",
-    copy: "Refresh pool decks, patios, lanais, and screens so the spaces you use outside look clean and feel inviting.",
     items: "Pool Decks · Patios · Lanais · Screens",
     image: "/assets/pool-deck-clean.webp",
     imageAlt: "Clean pool deck surrounding a screened-in swimming pool",
@@ -201,7 +197,6 @@ export default function Home() {
                 <div className="service-copy">
                   <span className="service-number">{service.number}</span>
                   <h3>{service.title}</h3>
-                  <p>{service.copy}</p>
                   <small>{service.items}</small>
                 </div>
                 <div className="photo-slot has-photo service-photo">
@@ -296,10 +291,14 @@ export default function Home() {
                 the person who shows up and does it. On time, courteous, and priced
                 fairly, with no upselling and no surprises on the invoice.
               </p>
+              <div className="photo-slot has-photo about-photo">
+                <img src="/assets/austin-sollenberger.webp" alt="Austin Sollenberger, owner of Florida Orange Pressure Washing" width="1050" height="1400" loading="lazy" decoding="async" />
+              </div>
+              <p>
+                Austin checks the work with you before pulling out of the driveway.
+                If something is not right, he will make it right.
+              </p>
               <div className="about-media">
-                <div className="photo-slot has-photo about-photo">
-                  <img src="/assets/austin-sollenberger.webp" alt="Austin Sollenberger, owner of Florida Orange Pressure Washing" width="1050" height="1400" loading="lazy" decoding="async" />
-                </div>
                 <p className="about-rating-label">Leave us a review</p>
                 <a className="about-rating" href="https://share.google/h75AAtK9pGtpQ15ew" target="_blank" rel="noreferrer">
                   <GoogleIcon />
@@ -307,10 +306,6 @@ export default function Home() {
                   <strong>5.0 on Google</strong>
                 </a>
               </div>
-              <p>
-                Austin checks the work with you before pulling out of the driveway.
-                If something is not right, he will make it right.
-              </p>
             </div>
           </div>
         </section>
