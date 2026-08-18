@@ -157,7 +157,7 @@ export default function Home() {
           />
           <div className="hero-shade" />
           <div className="hero-content">
-            <p className="eyebrow eyebrow--bright">Austin Sollenberger · Owner-Operated</p>
+            <p className="eyebrow eyebrow--bright">Austin Sollenberger · <span className="nowrap">Owner-Operated</span></p>
             <h1 id="hero-title">Exterior cleaning<br />done right.</h1>
             <p className="hero-copy">
               Pressure washing, soft washing, and paver sealing in Ponte Vedra,
@@ -366,7 +366,6 @@ export default function Home() {
         </div>
       </footer>
 
-      <div className="mobile-actions"><a href={PHONE_HREF}>Call or text</a><a href="#contact">Free estimate</a></div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
     </>
   );
