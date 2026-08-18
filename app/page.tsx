@@ -266,6 +266,7 @@ export default function Home() {
             </div>
             <div className="contact-divider" aria-hidden="true" />
             <div className="contact-details" id="area">
+              <p className="eyebrow contact-details-heading">Service area</p>
               <div className="area-tags">
                 {areas.map((area) => (
                   <span key={area} className={area === "Nocatee" ? "area-tag area-tag--home" : "area-tag"}>

@@ -509,6 +509,7 @@ img { display: block; }
 .text-button { align-self: flex-start; margin-top: 20px; border: 0; border-bottom: 1px solid currentColor; background: transparent; color: var(--navy); padding: 0 0 2px; font-weight: 700; cursor: pointer; }
 
 .contact-details { display: flex; flex-direction: column; }
+.contact-details-heading { margin-bottom: 14px; }
 
 .area-tags { display: none; }
 
