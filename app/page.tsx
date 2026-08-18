@@ -179,14 +179,6 @@ export default function Home() {
             <div>
               <p className="eyebrow">Pressure washing</p>
               <h2 id="services-title">What we do</h2>
-              <p className="services-intro">
-                Driveways, siding, fences, and pool decks: professional-grade
-                pressure washing and soft washing for every exterior
-                surface, done right the first time. We match the pressure,
-                cleaner, and technique to each material, so concrete gets
-                blasted clean while siding and pavers get the gentler touch
-                they need to stay in good shape for years to come.
-              </p>
             </div>
             <div className="recent-work-link">
               <span>See more work</span>
@@ -199,26 +191,37 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="service-grid">
-            {services.map((service) => (
-              <article className="service-item" key={service.number}>
-                <div className="service-copy">
-                  <span className="service-number">{service.number}</span>
-                  <h3>{service.title}</h3>
-                </div>
-                <div className="photo-slot has-photo service-photo">
-                  <img
-                    src={service.image}
-                    alt={service.imageAlt}
-                    width={service.imageWidth}
-                    height={service.imageHeight}
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <small className="service-tags">{service.items}</small>
-              </article>
-            ))}
+          <div className="services-layout">
+            <p className="services-intro">
+              Driveways, siding, fences, and pool decks: professional-grade
+              pressure washing and soft washing for every exterior
+              surface, done right the first time. We match the pressure,
+              cleaner, and technique to each material, so concrete gets
+              blasted clean while siding and pavers get the gentler touch
+              they need to stay in good shape for years to come.
+            </p>
+
+            <div className="service-grid">
+              {services.map((service) => (
+                <article className="service-item" key={service.number}>
+                  <div className="service-copy">
+                    <span className="service-number">{service.number}</span>
+                    <h3>{service.title}</h3>
+                  </div>
+                  <div className="photo-slot has-photo service-photo">
+                    <img
+                      src={service.image}
+                      alt={service.imageAlt}
+                      width={service.imageWidth}
+                      height={service.imageHeight}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <small className="service-tags">{service.items}</small>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
