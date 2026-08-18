@@ -179,6 +179,11 @@ export default function Home() {
             <div>
               <p className="eyebrow">Pressure washing</p>
               <h2 id="services-title">What we do</h2>
+              <p className="services-intro">
+                Driveways, siding, fences, pool decks—professional-grade
+                pressure washing and soft washing for every exterior
+                surface, done right the first time.
+              </p>
             </div>
             <div className="recent-work-link">
               <span>See more work</span>

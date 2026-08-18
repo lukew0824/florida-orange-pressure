@@ -276,6 +276,14 @@ img { display: block; }
   line-height: 1.6;
 }
 
+.services-intro {
+  margin: 14px 0 0;
+  max-width: 460px;
+  color: #4a4038;
+  font-size: 16.5px;
+  line-height: 1.6;
+}
+
 .services-section { padding-top: 104px; background: var(--warm-cream); }
 
 .service-grid {
@@ -443,17 +451,20 @@ img { display: block; }
 
 @media (min-width: 901px) {
   .about-grid {
-    grid-template-columns: 380px 1fr;
+    grid-template-columns: 460px 1fr;
     grid-template-areas:
       "photo header"
       "photo para1"
       "photo para2"
       "photo media";
     align-items: start;
-    gap: 12px 56px;
-    max-width: 980px;
+    gap: 12px 72px;
+    max-width: 1180px;
   }
-  .about-photo { margin: 0; }
+  .about-photo { width: 460px; height: 560px; margin: 0; }
+  .about-para,
+  .about-heading,
+  .about-media { max-width: 560px; }
   .about-media { align-items: flex-start; margin-top: 14px; }
 }
 
