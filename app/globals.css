@@ -439,6 +439,7 @@ img { display: block; }
 
 .about-section { background: var(--cream); }
 .about-grid { display: grid; grid-template-columns: 520px 1fr; gap: 72px; align-items: center; }
+.about-media { display: flex; flex-direction: column; gap: 18px; }
 .about-photo { width: 520px; height: 600px; }
 .about-photo img { object-position: center 48%; }
 
@@ -448,12 +449,13 @@ img { display: block; }
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  margin-top: 30px;
   padding: 16px 22px;
   border: 1px solid var(--border);
   background: var(--warm-cream);
 }
 
+.about-rating:hover { border-color: var(--dark-orange); }
+.about-rating .footer-google-icon { width: 22px; height: 22px; flex: 0 0 22px; }
 .about-rating-stars { color: var(--orange); font-size: 20px; letter-spacing: 2px; }
 .about-rating strong { color: var(--navy); font-family: "Archivo", sans-serif; font-size: 17px; font-weight: 700; }
 
@@ -660,7 +662,8 @@ img { display: block; }
   .benefit-grid, .form-row { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; }
   .about-copy { order: 1; }
-  .about-photo { order: 2; height: 460px; }
+  .about-media { order: 2; }
+  .about-photo { height: 460px; }
   .county-map-frame iframe { height: 300px; }
   .map-legend { align-items: flex-start; flex-direction: column; gap: 8px; }
 

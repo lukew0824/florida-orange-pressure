@@ -270,8 +270,15 @@ export default function Home() {
 
         <section className="content-section about-section" id="about" aria-labelledby="about-title">
           <div className="about-grid">
-            <div className="photo-slot has-photo about-photo">
-              <img src="/assets/austin-sollenberger.webp" alt="Austin Sollenberger, owner of Florida Orange Pressure Washing" width="1050" height="1400" loading="lazy" decoding="async" />
+            <div className="about-media">
+              <div className="photo-slot has-photo about-photo">
+                <img src="/assets/austin-sollenberger.webp" alt="Austin Sollenberger, owner of Florida Orange Pressure Washing" width="1050" height="1400" loading="lazy" decoding="async" />
+              </div>
+              <a className="about-rating" href="https://share.google/WtrtwWRNs37QiE3pV" target="_blank" rel="noreferrer">
+                <GoogleIcon />
+                <span className="about-rating-stars" aria-hidden="true">★★★★★</span>
+                <strong>5.0 on Google</strong>
+              </a>
             </div>
             <div className="about-copy">
               <p className="eyebrow">About</p>
@@ -285,10 +292,6 @@ export default function Home() {
                 Austin checks the work with you before pulling out of the driveway.
                 If something is not right, he will make it right.
               </p>
-              <div className="about-rating">
-                <span className="about-rating-stars" aria-hidden="true">★★★★★</span>
-                <strong>5.0 on Google</strong>
-              </div>
             </div>
           </div>
         </section>
