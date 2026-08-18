@@ -180,7 +180,7 @@ export default function Home() {
               <p className="eyebrow">Pressure washing</p>
               <h2 id="services-title">What we do</h2>
               <p className="services-intro">
-                Driveways, siding, fences, pool decks—professional-grade
+                Driveways, siding, fences, and pool decks: professional-grade
                 pressure washing and soft washing for every exterior
                 surface, done right the first time.
               </p>
@@ -202,7 +202,6 @@ export default function Home() {
                 <div className="service-copy">
                   <span className="service-number">{service.number}</span>
                   <h3>{service.title}</h3>
-                  <small>{service.items}</small>
                 </div>
                 <div className="photo-slot has-photo service-photo">
                   <img
@@ -214,6 +213,7 @@ export default function Home() {
                     decoding="async"
                   />
                 </div>
+                <small className="service-tags">{service.items}</small>
               </article>
             ))}
           </div>

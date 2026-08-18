@@ -277,6 +277,7 @@ img { display: block; }
 }
 
 .services-intro {
+  display: none;
   margin: 14px 0 0;
   max-width: 460px;
   color: #4a4038;
@@ -321,8 +322,9 @@ img { display: block; }
   line-height: 1.18;
 }
 
-.service-copy small {
-  margin-top: 16px;
+.service-tags {
+  display: block;
+  margin-top: 2px;
   color: var(--dark-orange);
   font-size: 13.5px;
   line-height: 1.5;
@@ -616,6 +618,7 @@ img { display: block; }
 }
 
 @media (max-width: 900px) {
+  .services-intro { display: block; }
   .site-header { padding: 12px 22px; }
   .desktop-nav { display: none; }
   .brand { min-width: 0; }
