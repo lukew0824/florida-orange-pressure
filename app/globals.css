@@ -481,11 +481,12 @@ img { display: block; }
   .services-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: start;
+    align-items: center;
     gap: 56px;
   }
 
-  .services-copy-column { max-width: 460px; }
+  .services-copy-column { order: 2; max-width: 460px; }
+  .service-grid { order: 1; }
   .services-intro { margin: 0 0 32px; max-width: none; }
 
   .services-list { display: flex; flex-direction: column; gap: 22px; margin: 0 0 32px; padding: 28px 0 0; border-top: 1px solid var(--border); }
