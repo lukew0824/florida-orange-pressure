@@ -423,12 +423,15 @@ img { display: block; }
 .sealing-photo:last-child img { object-position: center 58%; }
 
 .about-section { background: var(--cream); }
-.about-grid { display: grid; grid-template-columns: 520px 1fr; gap: 72px; align-items: center; }
-.about-media { display: flex; flex-direction: column; gap: 18px; }
-.about-photo { width: 520px; height: 600px; }
-.about-photo img { object-position: center 48%; }
+.about-grid { max-width: 760px; margin: 0 auto; }
 
 .about-copy > p:not(.eyebrow) { margin: 18px 0 0; color: var(--text); font-size: 17.5px; line-height: 1.7; }
+
+.about-media { display: flex; flex-direction: column; align-items: center; gap: 14px; width: 380px; max-width: 100%; margin: 28px auto; }
+.about-photo { width: 100%; height: 480px; }
+.about-photo img { object-position: center 48%; }
+
+.about-rating-label { margin: 0; color: var(--muted); font-size: 13.5px; }
 
 .about-rating {
   display: inline-flex;
@@ -523,7 +526,7 @@ img { display: block; }
 .map-note { margin: 12px 0 0; color: var(--muted); font-size: 13.5px; }
 
 .site-footer { border-top: 1px solid #24425f; background: var(--dark-navy); color: var(--cream); }
-.footer-grid { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 48px; align-items: start; padding: 44px 56px 34px; }
+.footer-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 48px; align-items: start; padding: 44px 56px 34px; }
 .footer-brand > div { display: flex; align-items: center; gap: 12px; }
 .footer-brand img { height: 38px; width: auto; }
 .footer-brand strong { color: var(--cream); font-family: "Archivo", sans-serif; font-size: 15px; letter-spacing: 0.04em; text-transform: uppercase; }
@@ -535,10 +538,6 @@ img { display: block; }
 .footer-column a:hover { color: var(--orange); }
 .footer-social a { display: flex; align-items: center; gap: 10px; }
 .footer-social-icon { width: 20px; height: 20px; flex: 0 0 20px; }
-.footer-rating { display: flex; align-items: center; gap: 10px; }
-.footer-rating strong { color: var(--cream); font-family: "Archivo", sans-serif; font-size: 16px; }
-.footer-rating span { color: var(--orange); font-size: 14px; letter-spacing: 1px; }
-.footer-review-link { align-self: flex-start; display: flex; align-items: center; gap: 9px; margin-top: 4px; border: 1px solid #24425f; color: #c9d8e4; padding: 9px 14px; font-size: 14px; }
 .footer-google-icon { width: 18px; height: 18px; flex: 0 0 18px; }
 
 .footer-bottom { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin: 0 56px; padding: 16px 0 20px; border-top: 1px solid #24425f; color: #7c8fa0; font-size: 13px; }
@@ -621,11 +620,8 @@ img { display: block; }
   .service-item { grid-template-columns: minmax(0, 1fr) 300px; }
   .sealing-grid, .contact-grid { grid-template-columns: 1fr; gap: 52px; }
   .contact-divider { width: 100%; height: 2px; }
-  .about-grid { grid-template-columns: minmax(280px, 0.8fr) 1.2fr; gap: 42px; }
-  .about-photo { width: 100%; height: 520px; }
   .contact-details { max-width: 680px; width: 100%; }
-  .footer-grid { grid-template-columns: 1.2fr 1fr 1fr; padding-inline: 34px; }
-  .footer-reviews { grid-column: 2; }
+  .footer-grid { padding-inline: 34px; }
   .footer-bottom { margin-inline: 34px; }
 }
 
@@ -650,10 +646,7 @@ img { display: block; }
   .sealing-photos .photo-slot { min-height: 320px; }
   .sealing-photo:last-child { display: none; }
   .benefit-grid, .form-row { grid-template-columns: 1fr; }
-  .about-grid { grid-template-columns: 1fr; }
-  .about-copy { order: 1; }
-  .about-media { order: 2; }
-  .about-photo { height: 460px; }
+  .about-photo { height: 400px; }
   .area-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 14px; }
   .area-tag { border: 1px solid var(--border); background: var(--warm-cream); color: var(--navy); padding: 6px 12px; font-family: "Archivo", sans-serif; font-size: 12.5px; font-weight: 600; }
   .area-tag--home { border-color: var(--orange); color: var(--dark-orange); }
@@ -662,7 +655,6 @@ img { display: block; }
 
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 34px; padding: 40px 20px 30px; }
   .footer-brand { grid-column: 1 / -1; }
-  .footer-reviews { grid-column: auto; }
   .footer-bottom { align-items: flex-start; flex-direction: column; margin-inline: 20px; }
   .footer-bottom nav { gap: 12px 18px; }
 

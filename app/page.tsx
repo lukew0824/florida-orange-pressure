@@ -288,16 +288,6 @@ export default function Home() {
 
         <section className="content-section about-section" id="about" aria-labelledby="about-title">
           <div className="about-grid">
-            <div className="about-media">
-              <div className="photo-slot has-photo about-photo">
-                <img src="/assets/austin-sollenberger.webp" alt="Austin Sollenberger, owner of Florida Orange Pressure Washing" width="1050" height="1400" loading="lazy" decoding="async" />
-              </div>
-              <a className="about-rating" href="https://share.google/h75AAtK9pGtpQ15ew" target="_blank" rel="noreferrer">
-                <GoogleIcon />
-                <span className="about-rating-stars" aria-hidden="true">★★★★★</span>
-                <strong>5.0 on Google</strong>
-              </a>
-            </div>
             <div className="about-copy">
               <p className="eyebrow">About</p>
               <h2 id="about-title">Meet Austin.</h2>
@@ -306,6 +296,17 @@ export default function Home() {
                 the person who shows up and does it. On time, courteous, and priced
                 fairly, with no upselling and no surprises on the invoice.
               </p>
+              <div className="about-media">
+                <div className="photo-slot has-photo about-photo">
+                  <img src="/assets/austin-sollenberger.webp" alt="Austin Sollenberger, owner of Florida Orange Pressure Washing" width="1050" height="1400" loading="lazy" decoding="async" />
+                </div>
+                <p className="about-rating-label">Leave us a review</p>
+                <a className="about-rating" href="https://share.google/h75AAtK9pGtpQ15ew" target="_blank" rel="noreferrer">
+                  <GoogleIcon />
+                  <span className="about-rating-stars" aria-hidden="true">★★★★★</span>
+                  <strong>5.0 on Google</strong>
+                </a>
+              </div>
               <p>
                 Austin checks the work with you before pulling out of the driveway.
                 If something is not right, he will make it right.
@@ -326,11 +327,6 @@ export default function Home() {
             <h2>Follow</h2>
             <a href="https://www.instagram.com/florida_orange_pressurewashing/" target="_blank" rel="noreferrer"><InstagramIcon /><span>Instagram</span></a>
             <a href="https://www.facebook.com/share/182dqsFzk2/" target="_blank" rel="noreferrer"><FacebookIcon /><span>Facebook</span></a>
-          </div>
-          <div className="footer-column footer-reviews">
-            <h2>Reviews</h2>
-            <div className="footer-rating"><strong>5.0</strong><span>★★★★★</span></div>
-            <a className="footer-review-link" href="https://share.google/h75AAtK9pGtpQ15ew" target="_blank" rel="noreferrer"><GoogleIcon /><span>Leave a Google review</span></a>
           </div>
         </div>
         <div className="footer-bottom">
