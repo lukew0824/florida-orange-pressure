@@ -199,6 +199,7 @@ export default function Home() {
                   <h3>{service.title}</h3>
                   <small>{service.items}</small>
                 </div>
+                <div className="service-divider" aria-hidden="true" />
                 <div className="photo-slot has-photo service-photo">
                   <img
                     src={service.image}
