@@ -290,7 +290,7 @@ export default function Home() {
               <div className="photo-slot has-photo about-photo">
                 <img src="/assets/austin-sollenberger.webp" alt="Austin Sollenberger, owner of Florida Orange Pressure Washing" width="1050" height="1400" loading="lazy" decoding="async" />
               </div>
-              <a className="about-rating" href="https://share.google/WtrtwWRNs37QiE3pV" target="_blank" rel="noreferrer">
+              <a className="about-rating" href="https://share.google/h75AAtK9pGtpQ15ew" target="_blank" rel="noreferrer">
                 <GoogleIcon />
                 <span className="about-rating-stars" aria-hidden="true">★★★★★</span>
                 <strong>5.0 on Google</strong>
@@ -328,7 +328,7 @@ export default function Home() {
           <div className="footer-column footer-reviews">
             <h2>Reviews</h2>
             <div className="footer-rating"><strong>5.0</strong><span>★★★★★</span></div>
-            <a className="footer-review-link" href="https://share.google/WtrtwWRNs37QiE3pV" target="_blank" rel="noreferrer"><GoogleIcon /><span>Leave a Google review</span></a>
+            <a className="footer-review-link" href="https://share.google/h75AAtK9pGtpQ15ew" target="_blank" rel="noreferrer"><GoogleIcon /><span>Leave a Google review</span></a>
           </div>
         </div>
         <div className="footer-bottom">
