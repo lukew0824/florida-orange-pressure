@@ -660,8 +660,7 @@ img { display: block; }
   .hero-copy { max-width: 560px; font-size: 17px; }
   .hero-actions { width: 100%; flex-direction: column; }
   .hero-actions a { width: 100%; }
-  .trust-strip { grid-template-columns: 1fr; }
-  .trust-strip > div, .trust-strip > div:nth-child(2) { border-right: 0; }
+  .trust-strip { display: none; }
   .content-section h2 { font-size: 40px; }
 
   .service-grid { gap: 34px; margin-top: 38px; }
