@@ -84,17 +84,6 @@ const sealingBenefits = [
   "Extends the life of your hardscape",
 ];
 
-const areas = [
-  "Ponte Vedra",
-  "Ponte Vedra Beach",
-  "Nocatee",
-  "St. Augustine",
-  "Jacksonville",
-  "Jacksonville Beach",
-  "Neptune & Atlantic Beach",
-  "Fruit Cove & Julington Creek",
-];
-
 export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",
@@ -266,43 +255,7 @@ export default function Home() {
               </p>
               <EstimateForm />
             </div>
-            <div className="contact-details">
-              <div className="map-frame">
-                <iframe
-                  src="https://www.google.com/maps?q=Nocatee%2C+FL&z=12&output=embed"
-                  title="Google Map for Florida Orange Pressure Washing in Nocatee, Florida"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  allowFullScreen
-                />
-              </div>
-              <div className="contact-facts">
-                <div><span>Call or text</span><strong>{PHONE}</strong></div>
-                <div><span>Email</span><strong>austin.sollenberger@gmail.com</strong></div>
-                <div><span>Estimates</span><strong>Free, no obligation</strong><small>Residential and small commercial</small></div>
-                <div><span>Based in</span><strong>Nocatee, FL</strong><small>St. Johns County</small></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="content-section area-section" id="area" aria-labelledby="area-title">
-          <div className="area-grid">
-            <div className="area-copy">
-              <p className="eyebrow">Service area</p>
-              <h2 id="area-title">St. Johns & Duval counties</h2>
-              <p>
-                Florida Orange works throughout St. Johns and Duval counties—Ponte
-                Vedra, Jacksonville, St. Augustine, and the towns in between. Not
-                sure if you are in range? Call and ask.
-              </p>
-              <div className="area-list">
-                {areas.map((area) => (
-                  <div key={area}><span>{area}</span>{area === "Nocatee" && <small>Home</small>}</div>
-                ))}
-              </div>
-            </div>
-            <div>
+            <div className="contact-details" id="area">
               <div className="county-map-frame">
                 <iframe src="/assets/service-area-map.html" title="Map of Florida with St. Johns and Duval counties highlighted" loading="lazy" />
                 <div className="map-legend">
