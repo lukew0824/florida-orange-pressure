@@ -87,6 +87,23 @@ const serviceBenefits = [
   { title: "Pool decks & outdoor living", detail: "Pool decks, patios, and lanais cleaned safe for bare feet and pets" },
 ];
 
+const testimonials = [
+  {
+    name: "Ron Cook",
+    quote:
+      "Austin is one of the most professional, personable and knowledgeable contractors that I have dealt with since we moved to Florida in 2010. His work ethic is fabulous. While waiting for the process to dry before continuing, he noticed one of my eave panels on the house was loose. He got his ladder and corrected it for me. The job he did on my driveway and lanai was done on time and at the price quoted. Both are looking like new.",
+  },
+  {
+    name: "Rich Davidson",
+    quote: "Austin did a great job! Very professional, meticulous attention to detail and overall great service!",
+  },
+  {
+    name: "Meridian Grant Beauty",
+    quote:
+      "Austin did a fantastic job at a very fair price! He took pride in his work and made sure we were happy before he left. He went above and beyond and was very well versed in his job! Definitely recommend!",
+  },
+];
+
 const areas = [
   "Ponte Vedra",
   "Ponte Vedra Beach",
@@ -344,6 +361,15 @@ export default function Home() {
                 <span className="about-rating-stars" aria-hidden="true">★★★★★</span>
                 <strong>5.0 on Google</strong>
               </a>
+            </div>
+            <div className="about-reviews">
+              {testimonials.map((testimonial) => (
+                <div className="review-card" key={testimonial.name}>
+                  <span className="review-card-stars" aria-hidden="true">★★★★★</span>
+                  <p className="review-card-quote">&ldquo;{testimonial.quote}&rdquo;</p>
+                  <p className="review-card-name">{testimonial.name}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
