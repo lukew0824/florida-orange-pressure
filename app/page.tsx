@@ -272,8 +272,8 @@ export default function Home() {
               <p className="eyebrow">Get in touch</p>
               <h2 id="contact-title">Request a free estimate</h2>
               <p>
-                Send a few details and Austin will get back to you with a price—or
-                call or text <a href={PHONE_HREF}>{PHONE}</a> to talk it through.
+                Send a few details and Austin will get back to you with a price,
+                or call or text <a href={PHONE_HREF}>{PHONE}</a> to talk it through.
               </p>
               <EstimateForm />
             </div>
