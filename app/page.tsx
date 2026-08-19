@@ -288,7 +288,7 @@ export default function Home() {
                 ))}
               </div>
               <div className="county-map-frame">
-                <iframe src="/assets/service-area-map.html?theme=dark" title="Map of Florida with St. Johns and Duval counties highlighted" loading="lazy" />
+                <iframe src="/assets/service-area-map.html" title="Map of Florida with St. Johns and Duval counties highlighted" loading="lazy" />
                 <div className="map-legend">
                   <span><i className="stjohns-key" />St. Johns County</span>
                   <span><i className="duval-key" />Duval County</span>
