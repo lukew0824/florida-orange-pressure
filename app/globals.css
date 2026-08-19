@@ -290,9 +290,6 @@ img { display: block; }
 
 .services-note { display: none; }
 
-.services-benefit-grid { text-align: left; max-width: 760px; }
-.services-benefit-grid p strong { color: var(--navy); font-weight: 700; }
-
 .service-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -332,7 +329,7 @@ img { display: block; }
 .service-tags {
   display: block;
   margin-top: 2px;
-  color: var(--dark-orange);
+  color: var(--text);
   font-size: 13.5px;
   line-height: 1.5;
 }
@@ -492,8 +489,6 @@ img { display: block; }
 
 @media (min-width: 1221px) {
   .services-intro { margin: 0 0 28px; max-width: 900px; font-size: 18px; }
-
-  .services-benefit-grid { grid-template-columns: repeat(4, 1fr); max-width: none; }
 
   .services-note { display: block; margin: 24px 0 0; max-width: none; padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 15px; line-height: 1.6; }
 

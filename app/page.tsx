@@ -36,7 +36,7 @@ const services = [
   {
     number: "01",
     title: "Driveways & hardscapes",
-    items: "Driveways · Walkways · Patios · Concrete",
+    detail: "Concrete, pavers, and walkways cleaned without stripping color or loosening joints",
     image: "/assets/driveway-clean.webp",
     imageAlt: "Clean interlocking paver driveway after pressure washing",
     imageWidth: 1179,
@@ -45,7 +45,7 @@ const services = [
   {
     number: "02",
     title: "House & soft washing",
-    items: "Siding · Stucco · Exterior Walls · Trim",
+    detail: "Siding, stucco, and trim washed at the right pressure so paint and caulking stay intact",
     image: "/assets/soft-wash-house.webp",
     imageAlt: "Clean yellow house siding after a soft wash",
     imageWidth: 1095,
@@ -54,7 +54,7 @@ const services = [
   {
     number: "03",
     title: "Fences",
-    items: "Vinyl · Wood · Exterior Surfaces",
+    detail: "Vinyl and wood fencing scrubbed clean without warping boards or fading the finish",
     image: "/assets/fence-clean.webp",
     imageAlt: "Bright white vinyl fence after cleaning",
     imageWidth: 660,
@@ -63,7 +63,7 @@ const services = [
   {
     number: "04",
     title: "Pool decks & outdoor living",
-    items: "Pool Decks · Patios · Lanais · Screens",
+    detail: "Pool decks, patios, and lanais cleaned safe for bare feet and pets",
     image: "/assets/pool-deck-clean.webp",
     imageAlt: "Clean pool deck surrounding a screened-in swimming pool",
     imageWidth: 765,
@@ -78,13 +78,6 @@ const sealingBenefits = [
   "Stabilizes and protects joint sand",
   "Makes pavers easier to maintain",
   "Extends the life of your hardscape",
-];
-
-const serviceBenefits = [
-  { title: "Driveways & hardscapes", detail: "Concrete, pavers, and walkways cleaned without stripping color or loosening joints" },
-  { title: "House & soft washing", detail: "Siding, stucco, and trim washed at the right pressure so paint and caulking stay intact" },
-  { title: "Fences", detail: "Vinyl and wood fencing scrubbed clean without warping boards or fading the finish" },
-  { title: "Pool decks & outdoor living", detail: "Pool decks, patios, and lanais cleaned safe for bare feet and pets" },
 ];
 
 const testimonials = [
@@ -226,18 +219,6 @@ export default function Home() {
                 they need to stay in good shape for years to come.
               </p>
 
-              <p className="benefit-label">What each service covers</p>
-              <div className="benefit-grid services-benefit-grid">
-                {serviceBenefits.map((benefit) => (
-                  <div key={benefit.title}>
-                    <span>+</span>
-                    <p>
-                      <strong>{benefit.title}:</strong> {benefit.detail}
-                    </p>
-                  </div>
-                ))}
-              </div>
-
               <p className="services-note">
                 Not sure which service fits your project? Send a note through
                 the estimate form below and Austin will point you the right
@@ -262,7 +243,7 @@ export default function Home() {
                       decoding="async"
                     />
                   </div>
-                  <small className="service-tags">{service.items}</small>
+                  <small className="service-tags">{service.detail}</small>
                 </article>
               ))}
             </div>
