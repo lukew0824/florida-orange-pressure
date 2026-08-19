@@ -335,17 +335,13 @@ export default function Home() {
       </main>
 
       <footer className="site-footer">
-        <div className="footer-grid">
-          <div className="footer-brand">
-            <div><img src="/assets/florida-orange-logo.png" alt="" width="1063" height="584" /><strong>Florida Orange</strong></div>
-            <p>Florida Orange Pressure Washing LLC · Nocatee, Florida</p>
-          </div>
+        <div className="footer-row">
+          <p className="footer-address">Florida Orange Pressure Washing LLC · Nocatee, Florida</p>
           <div className="footer-links">
-            <div className="footer-column"><a href={PHONE_HREF}>{PHONE}</a><a href="mailto:austin.sollenberger@gmail.com">austin.sollenberger@gmail.com</a></div>
-            <div className="footer-column footer-social">
-              <a href="https://www.instagram.com/florida_orange_pressurewashing/" target="_blank" rel="noreferrer"><InstagramIcon /><span>Instagram</span></a>
-              <a href="https://www.facebook.com/share/182dqsFzk2/" target="_blank" rel="noreferrer"><FacebookIcon /><span>Facebook</span></a>
-            </div>
+            <a href={PHONE_HREF}>{PHONE}</a>
+            <a href="mailto:austin.sollenberger@gmail.com">austin.sollenberger@gmail.com</a>
+            <a href="https://www.instagram.com/florida_orange_pressurewashing/" target="_blank" rel="noreferrer"><InstagramIcon /><span>Instagram</span></a>
+            <a href="https://www.facebook.com/share/182dqsFzk2/" target="_blank" rel="noreferrer"><FacebookIcon /><span>Facebook</span></a>
           </div>
         </div>
         <div className="footer-bottom">
