@@ -337,9 +337,13 @@ export default function Home() {
       <footer className="site-footer">
         <div className="footer-row">
           <p className="footer-address">Florida Orange Pressure Washing LLC · Nocatee, Florida</p>
-          <div className="footer-links">
+          <div className="footer-column">
+            <h2>Contact</h2>
             <a href={PHONE_HREF}>{PHONE}</a>
             <a href="mailto:austin.sollenberger@gmail.com">austin.sollenberger@gmail.com</a>
+          </div>
+          <div className="footer-column footer-social">
+            <h2>Follow</h2>
             <a href="https://www.instagram.com/florida_orange_pressurewashing/" target="_blank" rel="noreferrer"><InstagramIcon /><span>Instagram</span></a>
             <a href="https://www.facebook.com/share/182dqsFzk2/" target="_blank" rel="noreferrer"><FacebookIcon /><span>Facebook</span></a>
           </div>
