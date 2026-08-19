@@ -283,8 +283,8 @@ export default function Home() {
               <p className="area-list">
                 {areas.map((area, index) => (
                   <span key={area}>
-                    <span className={area === "Nocatee" ? "area-list-home" : undefined}>{area}</span>
-                    {index < areas.length - 1 && " · "}
+                    <span className={area === "Nocatee" ? "area-name area-list-home" : "area-name"}>{area}</span>
+                    {index < areas.length - 1 && " · "}
                   </span>
                 ))}
               </p>

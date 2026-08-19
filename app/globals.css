@@ -585,6 +585,7 @@ img { display: block; }
 .contact-details-heading { margin-bottom: 14px; }
 
 .area-list { margin: 0 0 14px; color: var(--navy); font-family: "Archivo", sans-serif; font-size: 14.5px; font-weight: 600; line-height: 1.9; }
+.area-name { white-space: nowrap; }
 .area-list-home { color: var(--dark-orange); }
 
 .county-map-frame { display: flex; flex-direction: column; flex: 1; padding: 14px; border: 1px solid #efd5bc; background: #fae3ce; }
