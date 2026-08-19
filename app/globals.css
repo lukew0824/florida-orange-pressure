@@ -673,9 +673,10 @@ img { display: block; }
   .trust-strip > div:nth-child(2) { border-right: 0; }
   .trust-strip > div { border-bottom: 1px solid #24425f; }
 
-  .section-heading-row { align-items: flex-end; gap: 16px; }
+  .section-heading-row { align-items: center; gap: 16px; }
   .section-heading-row > p { max-width: 650px; }
   .recent-work-link span { display: none; }
+  .recent-work-link .footer-social-icon { width: 28px; height: 28px; flex: 0 0 28px; }
   .sealing-grid, .contact-grid { grid-template-columns: 1fr; gap: 52px; }
   .contact-divider { width: 100%; height: 2px; }
   .contact-details { max-width: 680px; width: 100%; }
