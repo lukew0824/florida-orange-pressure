@@ -319,7 +319,7 @@ export default function Home() {
             </p>
             <div className="about-media">
               <p className="about-rating-label">Leave us a review</p>
-              <a className="about-rating" href="https://share.google/h75AAtK9pGtpQ15ew" target="_blank" rel="noreferrer">
+              <a className="about-rating" href="https://www.google.com/search?q=florida+orange+pressure+washing+llc+reviews" target="_blank" rel="noreferrer">
                 <GoogleIcon />
                 <span className="about-rating-stars" aria-hidden="true">★★★★★</span>
                 <strong>5.0 on Google</strong>
