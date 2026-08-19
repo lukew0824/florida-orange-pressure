@@ -290,6 +290,9 @@ img { display: block; }
 
 .services-note { display: none; }
 
+.services-benefit-grid { text-align: left; margin: 0 auto; max-width: 620px; }
+.services-benefit-grid p strong { color: var(--navy); font-weight: 700; }
+
 .service-grid {
   display: grid;
   grid-template-columns: 1fr;

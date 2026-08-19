@@ -80,6 +80,13 @@ const sealingBenefits = [
   "Extends the life of your hardscape",
 ];
 
+const serviceBenefits = [
+  { title: "Driveways & hardscapes", detail: "Concrete, pavers, and walkways cleaned without stripping color or loosening joints" },
+  { title: "House & soft washing", detail: "Siding, stucco, and trim washed at the right pressure so paint and caulking stay intact" },
+  { title: "Fences", detail: "Vinyl and wood fencing scrubbed clean without warping boards or fading the finish" },
+  { title: "Pool decks & outdoor living", detail: "Pool decks, patios, and lanais cleaned safe for bare feet and pets" },
+];
+
 const areas = [
   "Ponte Vedra",
   "Ponte Vedra Beach",
@@ -202,15 +209,17 @@ export default function Home() {
                 they need to stay in good shape for years to come.
               </p>
 
-              <p className="services-intro">
-                Every job starts with a walk-around so Austin can see exactly
-                what he is working with, then he picks the right chemical
-                and pressure for that surface instead of running one setting
-                over everything. Concrete, wood, vinyl, and pavers all wear
-                differently, and treating them the same way is how surfaces
-                get damaged. That is the difference between a quick rinse
-                and a wash that actually holds up.
-              </p>
+              <p className="benefit-label">What each service covers</p>
+              <div className="benefit-grid services-benefit-grid">
+                {serviceBenefits.map((benefit) => (
+                  <div key={benefit.title}>
+                    <span>+</span>
+                    <p>
+                      <strong>{benefit.title}:</strong> {benefit.detail}
+                    </p>
+                  </div>
+                ))}
+              </div>
 
               <p className="services-note">
                 Not sure which service fits your project? Send a note through
