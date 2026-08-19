@@ -1,21 +1,31 @@
 import { EstimateForm } from "./estimate-form";
+import { MobileNav } from "./mobile-nav";
 
 const PHONE = "352-219-6137";
 const PHONE_HREF = "tel:+13522196137";
 
 function InstagramIcon() {
   return (
-    <svg className="footer-social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true">
-      <rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.4" />
-      <circle cx="12" cy="12" r="4.4" />
-      <circle cx="17.6" cy="6.4" r="1.15" fill="currentColor" stroke="none" />
+    <svg className="footer-social-icon" viewBox="0 0 24 24" fill="none" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true">
+      <defs>
+        <linearGradient id="instagram-gradient" x1="2" y1="22" x2="22" y2="2" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stopColor="#FEDA75" />
+          <stop offset="0.35" stopColor="#FA7E1E" />
+          <stop offset="0.6" stopColor="#D62976" />
+          <stop offset="0.8" stopColor="#962FBF" />
+          <stop offset="1" stopColor="#4F5BD5" />
+        </linearGradient>
+      </defs>
+      <rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.4" stroke="url(#instagram-gradient)" />
+      <circle cx="12" cy="12" r="4.4" stroke="url(#instagram-gradient)" />
+      <circle cx="17.6" cy="6.4" r="1.15" fill="#D62976" stroke="none" />
     </svg>
   );
 }
 
 function FacebookIcon() {
   return (
-    <svg className="footer-social-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <svg className="footer-social-icon" viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true">
       <path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.25 10.44 22v-7.02H7.9v-2.92h2.54v-2.2c0-2.52 1.49-3.91 3.77-3.91 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.45 2.92h-2.33V22C18.34 21.25 22 17.08 22 12.06Z" />
     </svg>
   );
@@ -133,17 +143,7 @@ export default function Home() {
           <a className="nav-estimate" href="#contact">Get a Free Estimate</a>
         </nav>
 
-        <details className="mobile-menu">
-          <summary aria-label="Open navigation"><span /><span /><span /></summary>
-          <nav aria-label="Mobile navigation">
-            <a href="#services">Services</a>
-            <a href="#sealing">Sealing</a>
-            <a href="#area">Service Area</a>
-            <a href="#about">About</a>
-            <a href={PHONE_HREF}>Call {PHONE}</a>
-            <a className="orange-button" href="#contact">Get a Free Estimate</a>
-          </nav>
-        </details>
+        <MobileNav phone={PHONE} phoneHref={PHONE_HREF} />
       </header>
 
       <main id="main-content">
