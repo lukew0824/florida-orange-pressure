@@ -218,12 +218,6 @@ export default function Home() {
                 blasted clean while siding and pavers get the gentler touch
                 they need to stay in good shape for years to come.
               </p>
-
-              <p className="services-note">
-                Not sure which service fits your project? Send a note through
-                the estimate form below and Austin will point you the right
-                direction, no obligation.
-              </p>
             </div>
 
             <div className="service-grid">

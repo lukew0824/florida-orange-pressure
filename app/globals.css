@@ -288,8 +288,6 @@ img { display: block; }
   line-height: 1.6;
 }
 
-.services-note { display: none; }
-
 .service-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -489,8 +487,6 @@ img { display: block; }
 
 @media (min-width: 1221px) {
   .services-intro { margin: 0 0 28px; max-width: 900px; font-size: 18px; }
-
-  .services-note { display: block; margin: 24px 0 0; max-width: none; padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 15px; line-height: 1.6; }
 
   .service-grid { grid-template-columns: repeat(4, 1fr); gap: 28px; margin-top: 44px; }
 
