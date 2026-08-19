@@ -202,17 +202,15 @@ export default function Home() {
                 they need to stay in good shape for years to come.
               </p>
 
-              <ul className="services-list">
-                {services.map((service) => (
-                  <li key={service.number}>
-                    <span className="services-list-number">{service.number}</span>
-                    <div>
-                      <strong>{service.title}</strong>
-                      <span className="services-list-tags">{service.items}</span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+              <p className="services-intro">
+                Every job starts with a walk-around so Austin can see exactly
+                what he is working with, then he picks the right chemical
+                and pressure for that surface instead of running one setting
+                over everything. Concrete, wood, vinyl, and pavers all wear
+                differently, and treating them the same way is how surfaces
+                get damaged. That is the difference between a quick rinse
+                and a wash that actually holds up.
+              </p>
 
               <p className="services-note">
                 Not sure which service fits your project? Send a note through
