@@ -531,13 +531,16 @@ img { display: block; }
 .field input,
 .field textarea {
   width: 100%;
-  border: 1px solid #cfd9e2;
+  border: 1px solid #2c4a6b;
   border-radius: 0;
-  background: var(--white);
-  color: var(--navy);
+  background: #16324e;
+  color: var(--cream);
   padding: 14px 15px;
   font-size: 16px;
 }
+
+.field input::placeholder,
+.field textarea::placeholder { color: #8199b0; opacity: 1; }
 
 .field input { min-height: 50px; }
 .field textarea { resize: vertical; }
