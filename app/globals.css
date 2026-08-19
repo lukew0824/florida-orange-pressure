@@ -19,6 +19,7 @@
 :root {
   --navy: #10253c;
   --dark-navy: #0a1826;
+  --blue: #1d5f9e;
   --orange: #f7801a;
   --dark-orange: #c85d0b;
   --cream: #fff9f2;
@@ -506,7 +507,7 @@ img { display: block; }
 
 .contact-section { padding-top: 88px; padding-bottom: 88px; background: var(--cream); }
 .contact-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 40px; align-items: stretch; }
-.contact-grid .eyebrow { color: var(--navy); }
+.contact-grid .eyebrow { color: var(--blue); }
 .contact-copy > p:not(.eyebrow) { margin: 16px 0 30px; color: #4a4038; font-size: 17px; line-height: 1.65; }
 .contact-copy > p a { color: var(--dark-orange); text-decoration: underline; text-underline-offset: 3px; }
 .contact-divider { width: 2px; align-self: stretch; background: var(--orange); }
