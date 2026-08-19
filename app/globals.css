@@ -289,7 +289,7 @@ img { display: block; }
 
 .services-section { padding-top: 104px; background: var(--warm-cream); }
 
-.services-layout { margin-top: 40px; }
+.services-layout { margin-top: 24px; }
 
 .services-intro {
   margin: 0 0 28px;
@@ -493,7 +493,7 @@ img { display: block; }
 @media (min-width: 1221px) {
   .services-intro { margin: 0 0 28px; max-width: 900px; font-size: 18px; }
 
-  .service-grid { grid-template-columns: repeat(4, 1fr); gap: 28px; margin-top: 44px; }
+  .service-grid { grid-template-columns: repeat(4, 1fr); gap: 28px; margin-top: 24px; }
 
   .service-item:not(:first-child) { padding-top: 0; border-top: none; }
 
