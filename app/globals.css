@@ -351,7 +351,7 @@ img { display: block; }
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border: 3px solid rgba(16, 37, 60, 0.5);
+  border: 0;
   background:
     linear-gradient(135deg, rgba(16, 37, 60, 0.04), rgba(247, 128, 26, 0.08)),
     #efebe4;
