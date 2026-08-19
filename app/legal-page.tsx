@@ -12,7 +12,7 @@ export function LegalPage({ title, intro, children }: LegalPageProps) {
       <a className="skip-link" href="#main-content">Skip to content</a>
       <header className="site-header legal-header">
         <a className="brand" href="/" aria-label="Florida Orange home">
-          <img src="/assets/florida-orange-logo.png" alt="Florida Orange Pressure Washing LLC" width="1063" height="584" />
+          <img src="/assets/florida-orange-logo.webp" alt="Florida Orange Pressure Washing LLC" width="400" height="219" />
           <span>
             <strong>Florida Orange</strong>
             <small>Pressure Washing · Northeast Florida</small>

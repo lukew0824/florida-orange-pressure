@@ -109,15 +109,37 @@ const areas = [
 export default function Home() {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "HomeAndConstructionBusiness",
     name: "Florida Orange Pressure Washing LLC",
+    url: "https://floridaorangepressure.com",
     telephone: "+1-352-219-6137",
     email: "austin.sollenberger@gmail.com",
-    image: "/assets/florida-orange-rig.webp",
+    image: "https://floridaorangepressure.com/assets/florida-orange-rig.webp",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Nocatee",
+      addressRegion: "FL",
+      addressCountry: "US",
+    },
     areaServed: ["Ponte Vedra", "Jacksonville", "St. Augustine", "St. Johns County", "Duval County"],
     sameAs: [
       "https://www.instagram.com/florida_orange_pressurewashing/",
       "https://www.facebook.com/share/182dqsFzk2/",
+    ],
+    review: [
+      {
+        "@type": "Review",
+        reviewRating: {
+          "@type": "Rating",
+          ratingValue: "5",
+          bestRating: "5",
+        },
+        author: {
+          "@type": "Person",
+          name: testimonial.name,
+        },
+        reviewBody: testimonial.quote,
+      },
     ],
   };
 
@@ -127,7 +149,7 @@ export default function Home() {
 
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Florida Orange home">
-          <img src="/assets/florida-orange-logo.png" alt="Florida Orange Pressure Washing LLC" width="1063" height="584" />
+          <img src="/assets/florida-orange-logo.webp" alt="Florida Orange Pressure Washing LLC" width="400" height="219" />
           <span>
             <strong>Florida Orange</strong>
             <small>Pressure Washing · Northeast Florida</small>
@@ -340,12 +362,12 @@ export default function Home() {
           <p className="footer-address">Florida Orange Pressure Washing LLC · Nocatee, Florida</p>
           <div className="footer-links">
             <div className="footer-column">
-              <h2>Contact</h2>
+              <p className="footer-label">Contact</p>
               <a href={PHONE_HREF}>{PHONE}</a>
               <a href="mailto:austin.sollenberger@gmail.com">austin.sollenberger@gmail.com</a>
             </div>
             <div className="footer-column footer-social">
-              <h2>Follow</h2>
+              <p className="footer-label">Follow</p>
               <a href="https://www.instagram.com/florida_orange_pressurewashing/" target="_blank" rel="noreferrer"><InstagramIcon /><span>Instagram</span></a>
               <a href="https://www.facebook.com/share/182dqsFzk2/" target="_blank" rel="noreferrer"><FacebookIcon /><span>Facebook</span></a>
             </div>

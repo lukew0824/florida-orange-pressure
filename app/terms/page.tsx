@@ -4,6 +4,9 @@ import { LegalPage } from "../legal-page";
 export const metadata: Metadata = {
   title: "Terms of Use | Florida Orange Pressure Washing",
   description: "Website terms of use for Florida Orange Pressure Washing.",
+  alternates: {
+    canonical: "/terms",
+  },
 };
 
 export default function TermsOfUse() {

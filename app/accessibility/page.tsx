@@ -4,6 +4,9 @@ import { LegalPage } from "../legal-page";
 export const metadata: Metadata = {
   title: "Accessibility | Florida Orange Pressure Washing",
   description: "Accessibility statement for the Florida Orange Pressure Washing website.",
+  alternates: {
+    canonical: "/accessibility",
+  },
 };
 
 export default function AccessibilityStatement() {

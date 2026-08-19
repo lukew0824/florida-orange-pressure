@@ -4,6 +4,9 @@ import { LegalPage } from "../legal-page";
 export const metadata: Metadata = {
   title: "Privacy Policy | Florida Orange Pressure Washing",
   description: "Privacy policy for the Florida Orange Pressure Washing website and estimate form.",
+  alternates: {
+    canonical: "/privacy",
+  },
 };
 
 export default function PrivacyPolicy() {
