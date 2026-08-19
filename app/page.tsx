@@ -82,8 +82,8 @@ const services = [
 ];
 
 const sealingBenefits = [
-  "Enhances natural color",
   "Protects against UV and weather exposure",
+  "Enhances natural color",
   "Helps resist stains, algae, and moisture",
   "Stabilizes and protects joint sand",
   "Makes pavers easier to maintain",
@@ -158,7 +158,7 @@ export default function Home() {
           />
           <div className="hero-shade" />
           <div className="hero-content">
-            <p className="eyebrow eyebrow--bright">Austin Sollenberger · <span className="nowrap">Owner-Operated</span></p>
+            <p className="eyebrow">Austin Sollenberger · <span className="nowrap">Owner-Operated</span></p>
             <h1 id="hero-title">Exterior cleaning<br />done right.</h1>
             <p className="hero-copy">
               Pressure washing, soft washing, and paver sealing in Ponte Vedra,
@@ -338,12 +338,11 @@ export default function Home() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div><img src="/assets/florida-orange-logo.png" alt="" width="1063" height="584" /><strong>Florida Orange</strong></div>
-            <p>Florida Orange Pressure Washing LLC<br />Nocatee, Florida</p>
+            <p>Florida Orange Pressure Washing LLC · Nocatee, Florida</p>
           </div>
           <div className="footer-links">
-            <div className="footer-column"><h2>Contact</h2><a href={PHONE_HREF}>{PHONE}</a><a href="mailto:austin.sollenberger@gmail.com">austin.sollenberger@gmail.com</a></div>
+            <div className="footer-column"><a href={PHONE_HREF}>{PHONE}</a><a href="mailto:austin.sollenberger@gmail.com">austin.sollenberger@gmail.com</a></div>
             <div className="footer-column footer-social">
-              <h2>Follow</h2>
               <a href="https://www.instagram.com/florida_orange_pressurewashing/" target="_blank" rel="noreferrer"><InstagramIcon /><span>Instagram</span></a>
               <a href="https://www.facebook.com/share/182dqsFzk2/" target="_blank" rel="noreferrer"><FacebookIcon /><span>Facebook</span></a>
             </div>
