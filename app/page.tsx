@@ -103,7 +103,7 @@ const areas = [
   "Jacksonville",
   "Jacksonville Beach",
   "Neptune & Atlantic Beach",
-  "Fruit Cove & Julington Creek",
+  "SilverLeaf",
 ];
 
 export default function Home() {
@@ -280,13 +280,14 @@ export default function Home() {
             <div className="contact-divider" aria-hidden="true" />
             <div className="contact-details" id="area">
               <p className="eyebrow contact-details-heading">Service area</p>
-              <div className="area-tags">
-                {areas.map((area) => (
-                  <span key={area} className={area === "Nocatee" ? "area-tag area-tag--home" : "area-tag"}>
-                    {area}
+              <p className="area-list">
+                {areas.map((area, index) => (
+                  <span key={area}>
+                    <span className={area === "Nocatee" ? "area-list-home" : undefined}>{area}</span>
+                    {index < areas.length - 1 && " · "}
                   </span>
                 ))}
-              </div>
+              </p>
               <div className="county-map-frame">
                 <iframe src="/assets/service-area-map.html" title="Map of Florida with St. Johns and Duval counties highlighted" loading="lazy" />
                 <div className="map-legend">
