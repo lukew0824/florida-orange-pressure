@@ -180,19 +180,19 @@ export default function Home() {
         </section>
 
         <section className="content-section services-section" id="services" aria-labelledby="services-title">
-          <div className="section-heading-row">
-            <div>
-              <p className="eyebrow">Pressure washing</p>
+          <div className="services-heading">
+            <p className="eyebrow">Pressure washing</p>
+            <div className="section-heading-row">
               <h2 id="services-title">What we do</h2>
-            </div>
-            <div className="recent-work-link">
-              <span>See more work</span>
-              <a href="https://www.instagram.com/florida_orange_pressurewashing/" target="_blank" rel="noreferrer" aria-label="Instagram">
-                <InstagramIcon />
-              </a>
-              <a href="https://www.facebook.com/share/182dqsFzk2/" target="_blank" rel="noreferrer" aria-label="Facebook">
-                <FacebookIcon />
-              </a>
+              <div className="recent-work-link">
+                <span>See more work</span>
+                <a href="https://www.instagram.com/florida_orange_pressurewashing/" target="_blank" rel="noreferrer" aria-label="Instagram">
+                  <InstagramIcon />
+                </a>
+                <a href="https://www.facebook.com/share/182dqsFzk2/" target="_blank" rel="noreferrer" aria-label="Facebook">
+                  <FacebookIcon />
+                </a>
+              </div>
             </div>
           </div>
 
@@ -306,7 +306,7 @@ export default function Home() {
               <h2 id="about-title">Meet Austin.</h2>
             </div>
             <p className="about-para about-para-1">
-              Florida Orange is owner-operated—the person who quotes your job is
+              Florida Orange is owner-operated, the person who quotes your job is
               the person who shows up and does it. On time, courteous, and priced
               fairly, with no upselling and no surprises on the invoice.
             </p>
@@ -340,11 +340,13 @@ export default function Home() {
             <div><img src="/assets/florida-orange-logo.png" alt="" width="1063" height="584" /><strong>Florida Orange</strong></div>
             <p>Florida Orange Pressure Washing LLC<br />Nocatee, Florida</p>
           </div>
-          <div className="footer-column"><h2>Contact</h2><a href={PHONE_HREF}>{PHONE}</a><a href="mailto:austin.sollenberger@gmail.com">austin.sollenberger@gmail.com</a></div>
-          <div className="footer-column footer-social">
-            <h2>Follow</h2>
-            <a href="https://www.instagram.com/florida_orange_pressurewashing/" target="_blank" rel="noreferrer"><InstagramIcon /><span>Instagram</span></a>
-            <a href="https://www.facebook.com/share/182dqsFzk2/" target="_blank" rel="noreferrer"><FacebookIcon /><span>Facebook</span></a>
+          <div className="footer-links">
+            <div className="footer-column"><h2>Contact</h2><a href={PHONE_HREF}>{PHONE}</a><a href="mailto:austin.sollenberger@gmail.com">austin.sollenberger@gmail.com</a></div>
+            <div className="footer-column footer-social">
+              <h2>Follow</h2>
+              <a href="https://www.instagram.com/florida_orange_pressurewashing/" target="_blank" rel="noreferrer"><InstagramIcon /><span>Instagram</span></a>
+              <a href="https://www.facebook.com/share/182dqsFzk2/" target="_blank" rel="noreferrer"><FacebookIcon /><span>Facebook</span></a>
+            </div>
           </div>
         </div>
         <div className="footer-bottom">

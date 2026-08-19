@@ -30,7 +30,7 @@ export function EstimateForm() {
 
       form.reset();
       setState("success");
-      setMessage("Thanks — Austin received your request and will get back to you shortly.");
+      setMessage("Thanks, Austin received your request and will get back to you shortly.");
     } catch (error) {
       setState("error");
       setMessage(
