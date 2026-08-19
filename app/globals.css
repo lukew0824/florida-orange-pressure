@@ -571,7 +571,9 @@ img { display: block; }
 .contact-details { display: flex; flex-direction: column; }
 .contact-details-heading { margin-bottom: 14px; }
 
-.area-tags { display: none; }
+.area-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 14px; }
+.area-tag { border: 1px solid var(--border); background: var(--warm-cream); color: var(--navy); padding: 6px 12px; font-family: "Archivo", sans-serif; font-size: 12.5px; font-weight: 600; }
+.area-tag--home { border-color: var(--orange); color: var(--dark-orange); }
 
 .county-map-frame { display: flex; flex-direction: column; flex: 1; padding: 14px; border: 1px solid #efd5bc; background: #fae3ce; }
 .county-map-frame iframe { display: block; width: 100%; flex: 1; min-height: 280px; border: 0; background: #fae3ce; }
@@ -701,9 +703,6 @@ img { display: block; }
   .sealing-photo:last-child { display: none; }
   .benefit-grid, .form-row { grid-template-columns: 1fr; }
   .about-photo { height: 400px; }
-  .area-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 14px; }
-  .area-tag { border: 1px solid var(--border); background: var(--warm-cream); color: var(--navy); padding: 6px 12px; font-family: "Archivo", sans-serif; font-size: 12.5px; font-weight: 600; }
-  .area-tag--home { border-color: var(--orange); color: var(--dark-orange); }
   .county-map-frame iframe { flex: none; height: 300px; }
   .map-legend { align-items: flex-start; flex-direction: column; gap: 8px; }
 
